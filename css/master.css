@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    position: relative;
+    font-family: "Adamina", serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1728px;
+}
+
+.margin-b {
+    margin-bottom: 24px;
+}
+
+.margin-b-8 {
+    margin-bottom: 8px;
+}
+
+main {
+    width: 100%;
+}
+
+.sign-in {
+    width: 100%;
+    min-height: 100svh;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.sign-in .text {
+    width: calc(50% - 16px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.text .head {
+    max-width: 388px;
+    max-height: 126px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.text .head h1 {
+    line-height: 36px;
+    font-size: 36px;
+    color: #0c1421;
+}
+
+.text .head p {
+    max-width: 100%;
+    line-height: 28.8px;
+    font-size: 18px;
+    color: #313957;
+}
+
+.text form {
+    width: 100%;
+    max-width: 388px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text form label {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.text form a.forgot-pass {
+    align-self: flex-end;
+    color: #1e4ae9;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 16px;
+}
+
+.text form input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #d4d7e3;
+    border-radius: 12px;
+    padding: 16px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.text form input::placeholder {
+    color: #8897ad;
+}
+
+.text form .btn {
+    height: 52px;
+    background-color: #162d3a;
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+    padding: 16px, 0px, 16px, 0px;
+}
+
+.text .or {
+    width: 100%;
+    max-width: 388px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text .or .or-text {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.text .or .border {
+    width: calc(50% - 25px);
+    height: 1px;
+    background-color: #cfdfe2;
+}
+
+.text .sign-with {
+    width: 100%;
+    max-width: 388px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text .sign-with .box {
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: #f3f9fa;
+    padding: 12px, 9px, 12px, 9px;
+}
+
+.text .sign-with .box span {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.text .sign-up {
+    font-size: 18px;
+    line-height: 28.8px;
+}
+
+.text .sign-up a {
+    text-decoration: none;
+    color: #1e4ae9;
+}
+
+.sign-in .image {
+    width: 100%;
+    max-width: calc(50% - 16px);
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in .image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .sign-in {
+        flex-direction: column-reverse;
+        padding: 24px;
+        align-items: stretch;
+    }
+    .sign-in .text {
+        width: 100%;
+    }
+    .sign-in .image {
+        width: 100%;
+        max-width: 100%;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sign-in .image img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    .sign-in {
+        flex-direction: column-reverse;
+        padding: 24px;
+        align-items: stretch;
+    }
+    .sign-in .text {
+        width: 100%;
+    }
+
+    .text .head h1 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .text .head p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .text form label {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .text form a.forgot-pass {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .text form .btn {
+        height: 44px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .text .or .or-text {
+        font-size: 16px;
+        background-color: white;
+    }
+
+    .text .sign-up {
+        font-size: 16px;
+        line-height: 25.6px;
+    }
+
+    .sign-in .image {
+        max-width: 388px;
+        height: 180px;
+    }
+    .sign-in .image img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
